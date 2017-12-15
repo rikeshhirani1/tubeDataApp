@@ -1,0 +1,26 @@
+body {
+}
+
+#searchError{
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    display: none;
+}
+
+#tubeColor{
+    height: 35px;
+    border-radius: 4px;
+}
+            
+#tubeName{
+    display: block;
+    vertical-align: middle;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}

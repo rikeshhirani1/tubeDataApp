@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tube Data</title>       
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Tube Data</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <form action="result.html" method="get" >
+                        <input type="text" class="form-control stationsValue" name="tubeLine" placeholder="Tube Line" required>
+                        <input type="submit" class="btn btn-default" value="Search" onclick="return validateForm()"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+       <div class="alert alert-warning alert-dismissable" role="alert" id="searchError">
+            <b>Your search did not match any records. Please try again.</b>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins and Typeahead) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Typeahead.js Bundle -->
+        <script src="javascript/lib/typeahead/typeahead.bundle.min.js"></script>
+
+        <script src="javascript/index.js"></script>
+    </body>
+</html>
